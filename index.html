@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CampusCV – Student Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="top-nav">
+  <div class="logo">CampusCV</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About us</a>
+    <a href="privacy.html">Privacy policy</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Create a job‑ready resume in minutes</h1>
+    <p>Built for students and bachelor graduates with no or little experience.</p>
+    <a href="#builder" class="btn-primary">Start building</a>
+  </div>
+  <div class="hero-image">
+    <!-- static mockup similar to your screenshot -->
+    <div class="resume-card">
+      <div class="resume-header">
+        <div class="avatar-circle"></div>
+        <div>
+          <h2 id="prev-name">RICHARD SANCHEZ</h2>
+          <p id="prev-title">Marketing Manager</p>
+        </div>
+      </div>
+      <div class="resume-body">
+        <h3>Profile</h3>
+        <p id="prev-summary">Short professional summary will appear here.</p>
+        <h3>Education</h3>
+        <p id="prev-education">Your latest degree will appear here.</p>
+        <h3>Skills</h3>
+        <p id="prev-skills">Key skills will appear here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="builder" class="builder">
+  <h2>Build your resume</h2>
+  <form id="resume-form">
+    <h3>Personal details</h3>
+    <label>Full name
+      <input type="text" id="name" placeholder="Richard Sanchez" />
+    </label>
+    <label>Title
+      <input type="text" id="title" placeholder="Marketing Manager" />
+    </label>
+    <label>Email
+      <input type="email" id="email" placeholder="you@example.com" />
+    </label>
+    <label>Phone
+      <input type="tel" id="phone" placeholder="+1 123 456 7890" />
+    </label>
+
+    <h3>Profile summary</h3>
+    <textarea id="summary" rows="4"
+      placeholder="Write 2–3 lines about your goals, strengths and what you can bring as a student."></textarea>
+
+    <h3>Education</h3>
+    <textarea id="education" rows="4"
+      placeholder="B.B.A. in Marketing, XYZ University, 2021 – 2025"></textarea>
+
+    <h3>Skills</h3>
+    <textarea id="skills" rows="3"
+      placeholder="Digital marketing, Social media, MS Excel, Communication"></textarea>
+
+    <h3>Projects / Internships</h3>
+    <textarea id="experience" rows="5"
+      placeholder="List academic projects, internships or part‑time roles with bullet‑style lines."></textarea>
+
+    <button type="button" class="btn-primary" onclick="updatePreview()">Update preview</button>
+    <button type="button" class="btn-outline" onclick="window.print()">Download / Print</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <p>© 2025 CampusCV. All rights reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
